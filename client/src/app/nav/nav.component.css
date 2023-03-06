@@ -1,0 +1,28 @@
+.navbar {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+}
+
+.navbar-start {
+  display: flex;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 533px) {
+  .navbar-end {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 326px) {
+  .navbar-start {
+    display: none;
+  }
+}
+
+nav img {
+  scale: 1.2;
+}

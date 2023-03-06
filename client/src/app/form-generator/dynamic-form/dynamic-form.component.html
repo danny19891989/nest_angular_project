@@ -1,0 +1,14 @@
+<div>
+  <form (ngSubmit)="onSubmit()" [formGroup]="form">
+    <div *ngFor="let control of meta" class="field">
+      <app-control [control]="control" [form]="form"></app-control>
+    </div>
+    <div class="buttons">
+      <button type="submit" class="button is-primary" [disabled]="!form.valid">
+        save
+      </button>
+    </div>
+  </form>
+
+  <div><strong>Saved The Following Values</strong><br />{{ payload }}</div>
+</div>

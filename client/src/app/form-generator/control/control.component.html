@@ -1,0 +1,39 @@
+<div>
+  <app-label *ngIf="control.controlType === 'label'" [meta]="control"></app-label>
+  <app-text-input
+    *ngIf="control.controlType === 'textInput'"
+    [meta]="control"
+    [form]="form"
+  ></app-text-input>
+  <app-dropdown
+    *ngIf="control.controlType === 'dropdown'"
+    [meta]="control"
+    [form]="form"
+  ></app-dropdown>
+  <app-checkbox
+    *ngIf="control.controlType === 'checkbox'"
+    [meta]="control"
+    [form]="form"
+  ></app-checkbox>
+</div>
+
+<!-- <div>
+  <div [ngSwitch]="control.controlType">
+    <app-label *ngSwitchCase="'label'"></app-label>
+    <app-text-input
+      *ngSwithCase="'textinput'"
+      [meta]="control"
+      [form]="form"
+    ></app-text-input>
+    <app-dropdown
+      *ngSwithCase="'dropdown'"
+      [meta]="control"
+      [form]="form"
+    ></app-dropdown>
+    <app-checkbox
+      *ngSwithCase="'checkbox'"
+      [meta]="control"
+      [form]="form"
+    ></app-checkbox>
+  </div>
+</div> -->
