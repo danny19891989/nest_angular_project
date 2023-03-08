@@ -1,0 +1,11 @@
+<div class="field">
+  <div class="label-container">
+    <label class="label">{{ label }}</label>
+    <span class="required">*</span>
+    <span class="help tip" (click)="toggleGuideTip()">
+      <span class="tip-sign">(!)tip</span>
+      <span *ngIf="guideTipShown" class="tip-text">{{ discription }}</span>
+    </span>
+  </div>
+  <input class="input" [type]="inputType" />
+</div>

@@ -1,0 +1,7 @@
+.active-item {
+  display: block;
+}
+
+.hidden-item {
+  display: none;
+}

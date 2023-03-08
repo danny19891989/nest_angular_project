@@ -8,9 +8,4 @@ import { LabelControl } from './label-control';
 })
 export class LabelComponent {
   @Input() meta!: LabelControl;
-
-  ngOnInit() {
-    console.log(this.meta);
-    
-  }
 }

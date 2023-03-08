@@ -24,6 +24,7 @@ import { ControlComponent } from './control/control.component';
     LabelComponent,
     ControlComponent,
   ],
+  exports: [FormComponent],
   imports: [
     CommonModule,
     ReactiveFormsModule,

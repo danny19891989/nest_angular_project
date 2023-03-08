@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 // import { FormGroup, FormControl } from '@angular/forms';
 import { DataService } from '../../data.service';
 import { MetaService } from '../../meta.service';
@@ -12,6 +12,7 @@ import { ControlBase } from '../controls/control-base';
 export class FormComponent {
   meta!: ControlBase[];
   data!: any;
+  @Input() editMode = false;
 
   async ngOnInit() {
     this.refresh()

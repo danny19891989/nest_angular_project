@@ -1,0 +1,13 @@
+<div class="main-selection">
+  <div class="menu">
+    <button class="button" (click)="newText()">Text</button>
+    <button class="button" (click)="newCheckbox()">Checkbox</button>
+    <button class="button" (click)="newDropdown()">Dropdown</button>
+    <ng-container *ngIf="menuIsOpen">
+      <app-menu></app-menu>
+    </ng-container>
+  </div>
+  <div class="preview">
+    <app-form></app-form>
+  </div>
+</div>

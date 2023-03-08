@@ -1,0 +1,15 @@
+.main-selection {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  width: 46vw;
+  max-width: 46vw;
+}
+
+.preview {
+  width: 46vw;
+  max-width: 46vw;
+  border: 1px solid black;
+}

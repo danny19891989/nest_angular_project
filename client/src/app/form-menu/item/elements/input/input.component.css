@@ -1,0 +1,29 @@
+.field {
+  margin-bottom: 1.4rem;
+}
+
+
+.label-container {
+  display: flex;
+}
+
+.required {
+  margin-left: .5rem;
+  color: red;
+  font-weight: bold;
+}
+
+.tip {
+  /* margin-left: 1rem; */
+}
+
+.tip-sign {
+  margin-left: .5rem;
+}
+
+.tip .tip-text {
+  border: 1px solid #ccc;
+  padding: .5rem .75rem;
+  margin-left: .5rem;
+  border-radius: 4px;
+}

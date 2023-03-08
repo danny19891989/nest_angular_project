@@ -1,0 +1,23 @@
+<div class="card">
+  <form [formGroup]="form">
+    <div class="card-header-title">
+      <div class="nav">
+        <ul>
+          <li
+            [ngClass]="item === currentItem ? 'active' : ''"
+            *ngFor="let item of itemList; let i = index"
+            (click)="currentItem = item"
+          >
+            <a>{{ item }}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="form-body">
+      <app-item [item]="currentItem"></app-item>
+    </div>
+    <div class="form-actions">
+      <button class="button is-primary">Submit</button>
+    </div>
+  </form>
+</div>

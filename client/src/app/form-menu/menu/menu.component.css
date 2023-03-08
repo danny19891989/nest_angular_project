@@ -1,0 +1,22 @@
+.card-header-title {
+  background-color: #fff;
+}
+
+.nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: flex-end; */
+  /* justify-content: space-between; */
+}
+
+.nav li {
+  flex: 0 0 60px;
+  padding: 5px 3px;
+  text-align: center;
+  margin-right: 1em;
+  margin-bottom: .5em;
+}
+
+li.active {
+  border: 1px solid #aaa;
+}
